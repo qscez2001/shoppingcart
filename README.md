@@ -1,4 +1,12 @@
-DiUS is starting a computer store. You have been engaged to build the checkout system. We will start with the following products in our catalogue
+### How to test
+
+
+```Python
+  python -m unittest discover -s tests/unit
+```
+
+
+Apple shop is starting a computer store. You have been engaged to build the checkout system. We will start with the following products in our catalogue
 
 
 | SKU     | Name        | Price    |

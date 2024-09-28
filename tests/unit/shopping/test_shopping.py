@@ -1,10 +1,13 @@
 import unittest
-from shopping import Checkout, pricing_rules
+from src.shopping.checkout import Checkout
+from src.shopping.pricing_rules_data import getdata
 
 class TestCheckout(unittest.TestCase):
     def setUp(self):
         """Set up a new Checkout instance before each test."""
-        self.co = Checkout(pricing_rules)
+        # self.co = Checkout(pricing_rules)
+        self.pricing_rules = getdata()
+        self.co = Checkout(self.pricing_rules)
 
     def test_buy_x_get_y_free(self):
         """Test the BuyXGetYFree discount rule."""
